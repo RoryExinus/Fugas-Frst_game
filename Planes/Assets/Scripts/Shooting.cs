@@ -8,11 +8,16 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
 
     public float bulletforce = 20f;
+    public float fireRate = 1f;
+
+    private float fireCountdown = 0f;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1") && Time.time >= fireCountdown)
         {
+            fireCountdown = Time.time + 1f / fireRate;
             Shoot();
+
         }
     }
 
