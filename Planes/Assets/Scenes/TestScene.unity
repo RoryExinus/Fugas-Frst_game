@@ -351,8 +351,13 @@ PrefabInstance:
         type: 3}
       propertyPath: gun
       value: 
-      objectReference: {fileID: 11400000, guid: 4acc2dece25043b4db1c04e8ce52868e,
+      objectReference: {fileID: 11400000, guid: 5f4b9bbdc18bcf14ca9c3803fa246e8e,
         type: 2}
+    - target: {fileID: 5161323130513609143, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
+        type: 3}
+      propertyPath: WeaponUpCounter
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6659317949716127575, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: cam

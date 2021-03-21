@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58ae5929f17825e47a3539f4f5568689, type: 3}
-  m_Name: Second_Gin
+  m_Name: Second Gun
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 612203076292785160, guid: fac647f1990aa2b40865e1bea3ad0a7a,
+  bulletPrefab: {fileID: 1525493616844354, guid: a7c8b6f2a4acbd34aa0ea5ae6c7401fa,
     type: 3}
   wallPrefab: {fileID: 0}
+  Player: {fileID: 0}
   dmg: 0
   bulletforce: 10
   fireRate: 0.3

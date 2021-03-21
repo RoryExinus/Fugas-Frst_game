@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c415a6ef2a4ac30459caf8158b606d55, type: 3}
   m_Name: Third Gun
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 1746797733073528, guid: 7949930a4be82f14497a46200e300772,
+    type: 3}
   wallPrefab: {fileID: 0}
   Player: {fileID: 0}
   dmg: 0
