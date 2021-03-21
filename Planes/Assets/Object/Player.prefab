@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1033767103}
   m_Layer: 9
   m_Name: FirePoint_left
-  m_TagString: Untagged
+  m_TagString: FirePoint_left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033767102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21, y: 0.094, z: 0}
+  m_LocalPosition: {x: -0.21, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6285424087506163773}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 1750871097}
   m_Layer: 9
   m_Name: FirePoint_right
-  m_TagString: Untagged
+  m_TagString: FirePoint_right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750871096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 0.094, z: 0}
+  m_LocalPosition: {x: 0.21, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6285424087506163773}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 6659317949716127575}
   m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,12 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fcd5b835b8fc3408de558a4771afc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 86957349880974919}
-  bulletPrefab: {fileID: 612203076292785160, guid: fac647f1990aa2b40865e1bea3ad0a7a,
-    type: 3}
-  wallPrefab: {fileID: 0}
-  bulletforce: 20
-  fireRate: 10
+  gun: {fileID: 11400000, guid: 4acc2dece25043b4db1c04e8ce52868e, type: 2}
 --- !u!114 &1306461456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +261,7 @@ GameObject:
   - component: {fileID: 86957349880974919}
   m_Layer: 9
   m_Name: FirePoint_middle
-  m_TagString: Untagged
+  m_TagString: FirePoint_middle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5219209006139442111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.163, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6285424087506163773}
