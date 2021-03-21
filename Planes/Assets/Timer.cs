@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /*
- треба дописати смерть.
- тут вже є зупинка таймера (закоментовані частини).
+ it is necessary to add death.
+ there is already a timer stop (commented parts).
  */
 
 
