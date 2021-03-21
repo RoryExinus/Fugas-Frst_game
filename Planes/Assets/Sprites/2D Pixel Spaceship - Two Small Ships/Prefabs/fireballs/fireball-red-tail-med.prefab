@@ -158,3 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 15
+  hitEffect: {fileID: 616175287147600845, guid: 684928d706f264e4c8f85f864b9f7b5b,
+    type: 3}

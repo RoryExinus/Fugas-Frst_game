@@ -257,6 +257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1106246704667983547, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5161323130513609143, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: wallPrefab
@@ -271,7 +276,7 @@ PrefabInstance:
     - target: {fileID: 5161323130513609143, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: WeaponUpCounter
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5161323130513609143, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
