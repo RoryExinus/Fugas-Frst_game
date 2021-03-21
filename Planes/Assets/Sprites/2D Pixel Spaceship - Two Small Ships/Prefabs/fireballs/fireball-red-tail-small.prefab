@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8648660151539944006}
   - component: {fileID: 5516734008800547838}
   - component: {fileID: 1600361790565983370}
+  - component: {fileID: 8100655321482336992}
   m_Layer: 0
   m_Name: fireball-red-tail-small
   m_TagString: Untagged
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 2
+--- !u!114 &8100655321482336992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525493616844354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc0b49b36a83a4baf64ce34fd9c8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 10

@@ -16,9 +16,9 @@ MonoBehaviour:
     type: 3}
   wallPrefab: {fileID: 0}
   Player: {fileID: 0}
-  dmg: 0
-  bulletforce: 0
-  fireRate: 0
+  dmg: 17
+  bulletforce: 10
+  fireRate: 0.1
   first_firePoint: {fileID: 0}
   second_firePoint: {fileID: 0}
   third_firePoint: {fileID: 0}
