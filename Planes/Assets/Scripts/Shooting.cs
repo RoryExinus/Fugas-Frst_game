@@ -6,16 +6,6 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
 
-    //public Transform firePoint;
-    //public GameObject bulletPrefab;
-
-    //public GameObject wallPrefab;
-
-    //public float bulletforce = 20f;
-    //public float fireRate = 1f;
-
-    //private float fireCountdown = 0f;
-
     public Gun gun;
 
     ScriptableObject[] instance = Resources.FindObjectsOfTypeAll<ScriptableObject>();
@@ -35,7 +25,7 @@ public class Shooting : MonoBehaviour
         {
             gun = Resources.FindObjectsOfTypeAll<fourth_gun>()[0];
         }
-        else if (WeaponUpCounter == 4)
+        else
         {
             gun = Resources.FindObjectsOfTypeAll<fifth_gun>()[0];
         }
