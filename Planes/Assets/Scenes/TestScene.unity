@@ -202,6 +202,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible_wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2008527149257285410, guid: 67a1ee01301df534eb4a5952a1282fbc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2008527149257285410, guid: 67a1ee01301df534eb4a5952a1282fbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 2008527149257285439, guid: 67a1ee01301df534eb4a5952a1282fbc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -272,11 +282,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 86957349880974919, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.163
-      objectReference: {fileID: 0}
     - target: {fileID: 1106246704667983527, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -342,6 +347,12 @@ PrefabInstance:
       propertyPath: wallPrefab
       value: 
       objectReference: {fileID: 161914776}
+    - target: {fileID: 5161323130513609143, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 11400000, guid: 4acc2dece25043b4db1c04e8ce52868e,
+        type: 2}
     - target: {fileID: 6659317949716127575, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: cam

@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FirePoint_middle
+  - FirePoint_left
+  - FirePoint_right
+  - Invisible Wall
   layers:
   - Default
   - TransparentFX
