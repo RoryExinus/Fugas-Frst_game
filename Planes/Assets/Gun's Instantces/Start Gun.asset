@@ -17,6 +17,6 @@ MonoBehaviour:
   wallPrefab: {fileID: 0}
   Player: {fileID: 0}
   dmg: 10
-  bulletforce: 5
+  bulletforce: 8
   fireRate: 0.2
   firePoint: {fileID: 0}

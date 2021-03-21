@@ -8,12 +8,14 @@ public class Shooting : MonoBehaviour
 
     public Gun gun;
 
-    ScriptableObject[] instance = Resources.FindObjectsOfTypeAll<ScriptableObject>();
     public int WeaponUpCounter = 0;
     void Update()
     {
-
-        if (WeaponUpCounter == 1)
+        if (WeaponUpCounter == 0)
+        {
+            gun = Resources.FindObjectsOfTypeAll<Start_gun>()[0];
+        }
+        else if (WeaponUpCounter == 1)
         {
             gun = Resources.FindObjectsOfTypeAll<second_gun>()[0];
         }

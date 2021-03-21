@@ -8,6 +8,7 @@ TagManager:
   - FirePoint_left
   - FirePoint_right
   - Invisible Wall
+  - Asteroid
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - invisible wall
   - bullet
-  - 
+  - Asteroid
   - 
   - 
   - 
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 902448975
+    locked: 0
+  - name: Asteroid
+    uniqueID: 1141334273
     locked: 0
