@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pause_menu : MonoBehaviour
 {
+
+
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
@@ -40,13 +43,17 @@ public class Pause_menu : MonoBehaviour
         GameIsPaused = true;
     }
 
-
     public void LoadMenu()
     {
         Debug.Log("Main_Menu");
-    }
-    public void LoadSettings()
-    {
-        Debug.Log("Settings");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Main_Menu");
     }
 }
+
+
+
+
+
+
+
