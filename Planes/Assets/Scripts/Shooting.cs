@@ -27,19 +27,19 @@ public class Shooting : MonoBehaviour
     {
         if (WeaponUpCounter == 0)
         {
-            gun = first_weapon;
+            gun = Instantiate(first_weapon);
         }
         else if (WeaponUpCounter == 1)
         {
-            gun = second_weapon;
+            gun = Instantiate(second_weapon);
         }
         else if (WeaponUpCounter == 2)
         {
-            gun = third_weapon;
+            gun = Instantiate(third_weapon);
         }
         else if (WeaponUpCounter == 3)
         {
-            gun = fourth_weapon;
+            gun = Instantiate(fourth_weapon);
         }
         else
         {

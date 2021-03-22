@@ -9,6 +9,8 @@ TagManager:
   - FirePoint_right
   - Invisible Wall
   - Asteroid
+  - Bullet
+  - Box
   layers:
   - Default
   - TransparentFX
