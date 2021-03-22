@@ -5,12 +5,15 @@ using UnityEngine;
 public class AsteroidScript : MonoBehaviour
 {
     public float hp = 100f;
-    
+    public GameObject astroExplodeEffect;
+    public GameObject playerExplodeEffect;
     public void TakeDamage(float amount)
     {
         hp -= amount;
         if (hp <= 0)
         {
+            GameObject effect = Instantiate(astroExplodeEffect, transform.position, transform.rotation);
+            Destroy(effect, 0.3f);
             Destroy(gameObject);
         }
     }
@@ -18,7 +21,9 @@ public class AsteroidScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            GameObject effect = Instantiate(playerExplodeEffect, transform.position, transform.rotation);
             Destroy(collision.gameObject);
+            Destroy(effect, 0.3f);
             Destroy(gameObject);
         }
     }

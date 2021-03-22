@@ -101,6 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  astroExplodeEffect: {fileID: 616175287147600845, guid: cc8f5e00284bd6844824f941526c9736,
+    type: 3}
+  playerExplodeEffect: {fileID: 616175287147600845, guid: f3e4f864c7fbd8441b359b1886105e77,
+    type: 3}
 --- !u!114 &1214691117
 MonoBehaviour:
   m_ObjectHideFlags: 0
