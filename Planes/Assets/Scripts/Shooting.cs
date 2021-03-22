@@ -52,4 +52,9 @@ public class Shooting : MonoBehaviour
 
         }
     }
+
+    public void WeaponUpgrade()
+    {
+        WeaponUpCounter++;
+    }
 }
