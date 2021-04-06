@@ -11,13 +11,7 @@ namespace SmallShips
         [Tooltip("Array of children that have animation for explosion and should explode by calling from parent animation clip.")]
         public ExplosionController[] childrenExplosion;
 
-        /*
-        [Tooltip("Main parent that should be destroyed after all explosins complete. Will call in 'DestroyMainParent' function from AnimationClip")]
-        public GameObject mainaParent;
-        */
-
         Animator animator;
-        // Use this for initialization
         void Start()
         {
             animator = GetComponent<Animator>();
@@ -38,17 +32,13 @@ namespace SmallShips
             animator.SetBool("expl", true);
         }
 
-        /// <summary>
-        /// Call this function from animation clip in the last frame to remove GameObject.
-        /// </summary>
+
         public void DestroyObject()
         {
             Destroy(gameObject);
         }
 
-        /// <summary>
-        /// Call this function from animation clip in the last frame to remove parent GameObject.
-        /// </summary>
+
         public void DestroyParentObject()
         {
             Destroy(transform.parent.gameObject);
@@ -67,15 +57,7 @@ namespace SmallShips
                     Destroy(child);
         }
 
-        /*
-        public void DestroyMainParent()
-        {
-            if (mainaParent != null)
-                Destroy(mainaParent);
-            else
-                Debug.Log("mainaParent not set for object name: " + name);
-        }
-        */
+
     }
 
 }

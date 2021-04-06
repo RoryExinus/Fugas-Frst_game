@@ -15,8 +15,19 @@ public class Bullet : MonoBehaviour
         {
             return;
         }
-        AsteroidScript aster = collision.GetComponent<AsteroidScript>();
-        aster.TakeDamage(dmg);
+        if (collision.tag == "Asteroid")
+        {
+            AsteroidScript aster = collision.GetComponent<AsteroidScript>();
+            aster.TakeDamage(dmg);
+
+        }
+        else if (collision.tag == "Enemy")
+        {
+            EnemyScript enemy = collision.GetComponent<EnemyScript>();
+            enemy.TakeDamage(dmg);
+        }
+        
+
         Destroy(gameObject);
     }
 }

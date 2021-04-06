@@ -11,6 +11,8 @@ TagManager:
   - Asteroid
   - Bullet
   - Box
+  - Undefined
+  - Enemy
   layers:
   - Default
   - TransparentFX
