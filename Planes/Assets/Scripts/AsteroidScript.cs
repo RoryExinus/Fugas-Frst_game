@@ -7,6 +7,24 @@ public class AsteroidScript : MonoBehaviour
     public float hp = 100f;
     public GameObject astroExplodeEffect;
     public GameObject playerExplodeEffect;
+
+
+
+    private GameController gm;
+
+    private void Start()
+    {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gm = gameControllerObject.GetComponent<GameController>();
+        }
+        else
+        {
+            Debug.Log("GameControer = null");
+        }
+    }
+
     public void TakeDamage(float amount)
     {
         hp -= amount;
@@ -25,6 +43,9 @@ public class AsteroidScript : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(effect, 0.3f);
             Destroy(gameObject);
+            gm.GameOver();
+
+           
         }
     }
 }

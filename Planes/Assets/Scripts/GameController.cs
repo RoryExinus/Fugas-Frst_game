@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class GameController : MonoBehaviour
 {
@@ -10,11 +14,30 @@ public class GameController : MonoBehaviour
     public float spawnWait;
     public float startWait;
     public float wavetWait;
+    public bool restart;
+    public bool gameOver;
+
+    public Text End;
+    public bool end;
+
     private void Start()
     {
+        end = false;
+        gameOver = false;
+        restart = false;
         StartCoroutine (SpawnWaves());
     }
-
+    private void Update()
+    {
+        if (restart)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(1);
+                
+            }
+        }
+    }
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(spawnWait);
@@ -28,8 +51,21 @@ public class GameController : MonoBehaviour
             }
 
             yield return new WaitForSeconds(wavetWait);
+
+            if (gameOver)
+            {
+                End.text = "Press R to restart game OR Press alt +f4 to exit";
+                restart = true;
+                end = true;
+                break;
+            }
         }
     }
 
+    public void GameOver()
+    {
+        gameOver = true;
+        end = true;
 
+    }
 }
