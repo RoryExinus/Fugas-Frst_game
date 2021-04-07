@@ -24,7 +24,6 @@ public class Pause_menu : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("Shop");
                 Pause();
             }
         }    
