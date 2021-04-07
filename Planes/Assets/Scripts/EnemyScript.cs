@@ -42,8 +42,6 @@ public class EnemyScript : MonoBehaviour
             Destroy(effect, 0.3f);
             Destroy(gameObject);
             gm.GameOver();
-
-
         }
     }
 }

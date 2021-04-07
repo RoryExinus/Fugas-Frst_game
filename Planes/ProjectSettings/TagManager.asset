@@ -13,6 +13,7 @@ TagManager:
   - Box
   - Undefined
   - Enemy
+  - Enemy Bullet
   layers:
   - Default
   - TransparentFX

@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 1106246704667983527, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -5.47
       objectReference: {fileID: 0}
     - target: {fileID: 1106246704667983527, guid: 4ba5bcdbcf0d61648843826ad3d003e3,
         type: 3}
@@ -1648,7 +1648,7 @@ PrefabInstance:
     - target: {fileID: 2185291824665846819, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
         type: 3}
       propertyPath: hazards.Array.size
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2185291824665846819, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
         type: 3}
@@ -1679,6 +1679,24 @@ PrefabInstance:
       propertyPath: hazards.Array.data[4]
       value: 
       objectReference: {fileID: 3939047085525475104, guid: cd7a652f7fd575e45880953476e34451,
+        type: 3}
+    - target: {fileID: 2185291824665846819, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
+        type: 3}
+      propertyPath: hazards.Array.data[5]
+      value: 
+      objectReference: {fileID: 3939047085525475104, guid: cd7a652f7fd575e45880953476e34451,
+        type: 3}
+    - target: {fileID: 2185291824665846819, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
+        type: 3}
+      propertyPath: hazards.Array.data[6]
+      value: 
+      objectReference: {fileID: 658134941652387006, guid: c006fdb200e2dd0499ff9daa8b14ce86,
+        type: 3}
+    - target: {fileID: 2185291824665846819, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
+        type: 3}
+      propertyPath: hazards.Array.data[7]
+      value: 
+      objectReference: {fileID: 1578709245526429819, guid: dbb710d87f1e082489bc1cdfed87d63f,
         type: 3}
     - target: {fileID: 2185291824665846820, guid: 3e0dbdad01d884046b98f17a2c4bfaae,
         type: 3}

@@ -45,7 +45,7 @@ public class Shooting : MonoBehaviour
         {
             gun = Instantiate(fifth_weapon);
         }
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Jump"))
         {
 
             gun.Fire();

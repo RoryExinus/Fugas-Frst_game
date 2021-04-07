@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.3f);
-        if (collision.tag == "Box")
+        if (collision.CompareTag("Box") || collision.CompareTag("Bullet"))
         {
             return;
         }
@@ -25,6 +25,10 @@ public class Bullet : MonoBehaviour
         {
             EnemyScript enemy = collision.GetComponent<EnemyScript>();
             enemy.TakeDamage(dmg);
+        }
+        else if (collision.tag == "Enemy Bullet")
+        {
+            Destroy(collision.gameObject);
         }
         
 

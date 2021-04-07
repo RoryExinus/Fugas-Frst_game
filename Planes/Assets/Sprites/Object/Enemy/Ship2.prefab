@@ -115,6 +115,10 @@ GameObject:
   - component: {fileID: 7652095155658159485}
   - component: {fileID: 7652095155658159484}
   - component: {fileID: 3585014513134118841}
+  - component: {fileID: 233095333}
+  - component: {fileID: 233095332}
+  - component: {fileID: 233095331}
+  - component: {fileID: 4879996117991795770}
   m_Layer: 0
   m_Name: Ship2
   m_TagString: Enemy
@@ -253,6 +257,73 @@ MonoBehaviour:
     type: 3}
   playerExplodeEffect: {fileID: 616175287147600845, guid: f3e4f864c7fbd8441b359b1886105e77,
     type: 3}
+--- !u!114 &233095333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578709245526429819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25971d3fd3e6e3d489a0e5c7891a5dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -2
+  rb: {fileID: 7652095155658159485}
+--- !u!114 &233095332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578709245526429819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1252986373d438145bd645cfce6e57eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1939245619601230, guid: d2f2f92c494bd1c41970791d8041c000, type: 3}
+  firePoint: {fileID: 1576486203517488213}
+  deley: 0.4
+  fireRate: 2
+  playerExplodeEffect: {fileID: 0}
+--- !u!114 &233095331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578709245526429819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddea3c79cb38e2f49b3f9ebbf2f90dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dodge: 2
+  smoothing: 2
+  tilt: 5
+  startWait: {x: 0.5, y: 1}
+  maneuverTime: {x: 1, y: 3}
+  maneuverWait: {x: 1, y: 3}
+  boundary:
+    xMin: -4
+    xMax: 4
+    yMin: -10
+    yMax: 8.5
+--- !u!114 &4879996117991795770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578709245526429819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485c9e0a6c542eb4bb2d646822b7d55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 15
 --- !u!1 &1579117127528227177
 GameObject:
   m_ObjectHideFlags: 0
