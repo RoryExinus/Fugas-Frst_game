@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 707f1c5bb0682774bb1fce25b0004cdb
-  - enabled: 1
-    path: Assets/Scenes/Pause.unity
-    guid: 19901ed55a9b4834b8aca8a88841e2c4
-  - enabled: 1
-    path: Assets/Scenes/Lose_menu.unity
-    guid: 8dd3814f9ed32fe46a0eafd6b9ed942e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
