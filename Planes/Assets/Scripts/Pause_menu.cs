@@ -10,8 +10,11 @@ public class Pause_menu : MonoBehaviour
 
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    
 
+    public void Menu()
+    {
+        SceneManager.LoadScene("Main_Menu"); // game scene
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,9 +27,20 @@ public class Pause_menu : MonoBehaviour
             }
             else
             {
+                
                 Pause();
             }
-        }    
+        }
+        
+        
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+
+                    SceneManager.LoadScene("Main_Menu"); // game scene
+
+            }
+
+        
     }
 
     void Back()
