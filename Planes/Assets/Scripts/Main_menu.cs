@@ -10,7 +10,6 @@ public class Main_menu : MonoBehaviour
     {
         SceneManager.LoadScene("TestScene"); // game scene
     }
-
     public void ExitGame()
     {
         Debug.Log("Exit");

@@ -20,8 +20,11 @@ public class GameController : MonoBehaviour
     public Text End;
     public bool end;
 
+    public GameObject Die;
+
     private void Start()
     {
+        Die.SetActive(false);
         end = false;
         gameOver = false;
         restart = false;
@@ -55,7 +58,7 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
-                End.text = "Press R to restart game OR Press alt +f4 to exit";
+                Die.SetActive(true);
                 restart = true;
                 end = true;
                 break;
@@ -65,6 +68,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+        Die.SetActive(true);
         gameOver = true;
         end = true;
 

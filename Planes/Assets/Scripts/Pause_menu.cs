@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class Pause_menu : MonoBehaviour
 {
 
-
     public static bool GameIsPaused = false;
+    public GameObject pauseMenuUI;
     
 
 
@@ -24,23 +24,25 @@ public class Pause_menu : MonoBehaviour
             }
             else
             {
-                Paus();
+                SceneManager.LoadScene("Shop");
+                Pause();
             }
         }    
     }
 
     void Back()
     {
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
-    void Paus()
+    void Pause()
     {
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
-
 
 
 }
